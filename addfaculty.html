@@ -1,0 +1,68 @@
+<html>
+<head>
+  <title> Add Faculty </title>
+  <script src="addfac.js"></script>
+<style type="text/css"> 
+.one{
+   background-image:url("mark1.jpg");
+   height:100%;
+   background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	
+}
+  
+.two{
+   //z-index: 1;
+ // background: #FFFFFF;
+  max-width: 530px;
+ margin:0 0 0 35px;
+  font-size:22px;
+  
+}
+ .two input{
+   font-family:Arial,Helvetica,serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 60%;
+  border: 0;
+  margin: 28px 0 0 8px;
+  padding: 5px;	
+  //box-sizing: border-box;
+  font-size: 22px;
+}
+form label{
+width:134px;
+display:inline-block;
+font-weight:bold;
+}
+
+h1{
+    text-align:center;
+    font-size:40px;
+    text-shadow:1px 1px blue;
+}
+
+ </style>
+</head>
+<body>
+<div class="one">
+  <div class="head">
+    <h1><i> Add Faculty </i> </h1>
+ </div>
+ <div class="two">
+ <fieldset>
+ <legend> Faculty Details </legend>
+ <form name="facmas" action="addfac.php" method="post" onsubmit="return check()">
+  <label for="fname">FacultyName:</label><input type="text" autocomplete="off" name="fname" autocomplete="off" maxlength="50" required="" oninvalid="this.setCustomValidity('Please enter faculty name..!')" oninput="setCustomValidity('')"/><br>
+  <label for="subj">Subject:</label><input type="text" autocomplete="off" name="subj" autocomplete="off" required="" oninvalid="this.setCustomValidity('Please enter subject..!')" oninput="setCustomValidity('')"/>
+    
+   <input type="submit" value="Submit" autocomplete="off" STYLE="border-radius:10px;color:white;font-family:Arial,Helvetica,sans-serif;background-color:black;font-size:22px;align:center;size:15pt;margin-left:120px;height:42px;width:150px;" align="center"/>
+  
+  </form>
+  </fieldset>
+</div>
+</div>
+</body>
+</html>
+ 

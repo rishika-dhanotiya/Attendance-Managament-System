@@ -1,0 +1,59 @@
+ else if(rollno==" ")
+{  
+   alert("please enter the rollno name");
+  thisform.rno.focus();
+  return false;
+ }
+else if(course==" ")
+{  
+   alert("please enter the student name");
+  thisform.course.focus();
+  return false;
+}
+ else if(semester==" ")
+{  
+   alert("please enter the student name");
+  thisform.sem.focus();
+  return false;
+}
+else if(contactno==" ")
+{  
+   alert("please enter the student name");
+  thisform.cno.focus();
+  return false;
+}
+else if(address==" ")
+{  
+   alert("please enter the student name");
+  thisform.add.focus();
+  return false;
+}
+
+
+
+ var rollno=thisform.rno.value;
+ var course=thisform.course.value;
+ var semester=thisform.sem.value;
+ var contactno=thisform.cno.value;
+ var address=thisform.add.value;
+
+<script type="text/javascript">
+  function  validateReqFields(thisform)
+  {
+   var sname=thisform.stdname.value;
+   var rno=thisform.rollno.value;
+   if(sname == null || sname == " ")
+  {  
+   alert("please enter the student name");
+  thisform.stdname.focus();
+  return false;
+   }
+   else if(rno == null || rno == " ")
+   {  
+   alert("please enter the rollno name");
+  thisform.rollno.focus();
+  return false;
+   }
+   return true;
+  }
+ </script> 

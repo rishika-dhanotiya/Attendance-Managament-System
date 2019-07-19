@@ -1,0 +1,118 @@
+
+ <html>
+ <head>
+    <title> Add Student </title>
+   <script src="addstd.js"></script>
+  <style type="text/css">
+ .one{
+   background-image:url("mark1.jpg");
+   height:100%;
+   background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	
+}
+  
+.container{
+ // z-index: 1;
+ // background: #FFFFFF;
+  max-width: 550px;
+ margin:0 0 0 35px;
+  font-size:20px;
+  
+}
+ .container input{
+   font-family:Arial,Helvetica,serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 70%;
+  border: 0;
+  margin: 6px 0 0 8px;
+  padding: 5px;	
+  //box-sizing: border-box;
+  font-size: 22px;
+}
+form label{
+
+display:inline-block;
+width:125px;
+font-weight:bold;
+}
+
+.button {
+  font-family:Arial,Helvetica,sans-serif;
+  text-transform: uppercase;
+   border-radius:10px;
+  background-color:black;
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  padding: 4px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin:8px 0 0 140px;
+}
+
+/*.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}*/
+  h1{
+    text-align:center;
+    font-size:40px;
+    text-shadow:1px 1px blue;
+}
+ </style>
+ </head>
+ <body>
+   <div class="one">
+   <div class="head">
+    <h1> <i>Add Student</i> </h1>
+ </div>
+<div class="container">
+
+ <fieldset>
+ <legend> Student Details </legend>
+  <form name="stmas" action="insert.php" method="POST" onsubmit="return checkme()">
+   <label for="stdname">StudentName:</label><input type="text" name="stdname" autocomplete="off" maxlength="50" required="" oninvalid="this.setCustomValidity('Please enter student name..!')" oninput="setCustomValidity('')"/><br><br>
+   <label for="rollno">Roll No:</label><input type="text" name="rollno" autocomplete="off" required="" oninvalid="this.setCustomValidity('Please enter roll no..!')" oninput="setCustomValidity('')"/><br><br>
+   <label for="cour">Course:</label><input type="text" list="courses"  name="cour" autocomplete="off" required="" oninvalid="this.setCustomValidity('Please enter course..!')" oninput="setCustomValidity('')"/>
+                 <datalist id="courses">
+                 <option value="Mtech">
+                 <option value="MCA">
+                 <option value="MBA">
+                 <option value="BCOM">
+             </datalist><br><br>   
+   <label for="sem">Semester:</label><input type="text"  name="sem" autocomplete="off" required="" oninvalid="this.setCustomValidity('Please enter semester..!')" oninput="setCustomValidity('')"/><br><br>
+   <label for="contact_no">Contact No:</label><input type="text" name="contact_no" autocomplete="off" maxlength="10" required="" oninvalid="this.setCustomValidity('Please enter contact no..!')" oninput="setCustomValidity('')"/><br><br>
+   <label for="addr">Address:</label><input type="text" name="addr" autocomplete="off" required="" oninvalid="this.setCustomValidity('Please enter address..!')" oninput="setCustomValidity('')"/><br><br>
+   <div class="button">
+   <input type="submit" value="Submit" autocomplete="off" STYLE="color:white;background-color:black;font-size:20px;">
+  </div>
+  </form>
+  </fieldset>
+ 
+</div>
+</div>
+ </body>
+ </html>

@@ -1,0 +1,177 @@
+
+<html>
+<head>
+<title>Login Form </title>
+<script src="log.js"></script>
+<style type="text/css">
+
+.login-page {
+background-image: url("two.jpg");
+
+    /* Full height */
+    height: 100%; 
+    
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+
+}
+ .animate {
+ text-transform: uppercase;
+      text-align:center;
+      color:white;
+ font-family:Arial,Helvetica,sans-serif;
+      font-size:20px;
+// margin: 0 auto 5px;
+  padding: 7px;
+ // height:1px;
+}
+.form {
+   
+ 
+   
+  border-style:solid;
+     border-width:1pt;
+      border-color:black;
+    border-radius:18px;
+ position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 470px;
+  margin: 0 auto 75px;
+ //margin-top:100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.form input {
+  font-family:Arial,Helvetica,serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 70%;
+  border: 0;
+  margin: 20px 0 0 0;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 20px;
+  border-radius:20px;
+}
+/*.button {
+  font-family:Arial,Helvetica,sans-serif;
+  text-transform: uppercase;
+ // border-radius:15px 10px;
+ border-radius:20px;
+  background-color:black;
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  padding: 8px;
+  width: 180px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin:15px 0 0 0;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}*/
+/*.form button {
+ font-family:Arial,Helvetica,serif;
+  text-transform: uppercase;
+  outline: 0;
+  background:blue;
+  width: 50%;
+  border: 0;
+margin:10px 0 0 0;
+ box-shadow:5px 5px 5px black;
+   text-shadow:3px 2px black;
+   border-radius:7px;
+  padding: 12px;
+  color:white;
+  font-size: 18px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.form button:hover,.form button:active,.form button:focus {
+  background: blue;
+}*/
+
+ body {
+ 
+// background: #76b852; /* fallback for old browsers */
+  font-family:Arial,Helvetica,sans-serif;
+ -webkit-font-smoothing: antialiased;
+}
+
+</style>
+</head>
+<body>
+<div class="login-page">
+ <div class="animate">
+  <h1> Account Login </h1>
+ </div>
+  <div class="form">
+  
+    <form class="logmas" method="post" action="checkme.php" onsubmit="return log()">
+   <h3>  Username:  <input type="text"  name="name"  size="25" maxlength="50"required="" oninvalid="this.setCustomValidity('Please enter user name..!')" oninput="setCustomValidity('')"/></h3>
+    <h3> Password:  <input type="password" name="password" size="25" maxlength="50" required="" oninvalid="this.setCustomValidity('please enter password..!')" oninput="setCustomValidity('')"/></h3>
+      <div>
+	  <input type="submit" value="Submit" STYLE="border-radius:10px;color:white;font-family:Arial,Helvetica,sans-serif;background-color:black;font-size:22px;align:center;size:15pt;margin-left:6px;height:42px;width:150px;" align="center"/>
+	  </div>
+    </form>
+  </div>
+</div>
+
+<script>
+$('.message a').click(function(){
+   $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+});
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
